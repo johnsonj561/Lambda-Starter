@@ -1,0 +1,17 @@
+{
+  "name": "jmjdevwork_lambda_userservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload-lambda": "tasks/upload-function.sh",
+    "invoke-lambda": "tasks/invoke-function.sh",
+    "invoke-lambda-payload": "tasks/invoke-function-w-payload.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin J",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  }
+}

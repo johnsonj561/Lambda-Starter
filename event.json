@@ -1,0 +1,10 @@
+// event payload included with 'npm run invoke-lambda-payload'
+
+{
+  "httpMethod": "put",
+  "formData": {
+    "username": "eeaamarc234",
+    "password": "abaabababab",
+    "token" : false
+  }
+}
