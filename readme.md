@@ -11,7 +11,7 @@ A payload can be defined as JSON in event.json for testing purposes.
 
 #### Upload Lambda to AWS
 ```npm run upload-lambda```  
-Executes [upload-function.]. Script removes any existing zip file, compresses project into dist/main.zip, then uploads zip to AWS.  
+Executes [upload-function]. Script removes any existing zip file, compresses project into dist/main.zip, then uploads zip to AWS.  
 
 #### Invoke Lambda
 ```npm run invoke-lambda```  
