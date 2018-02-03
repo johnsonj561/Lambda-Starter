@@ -10,15 +10,15 @@ Currently working on converting [Project-Portfolio] to serverless. This will be 
 A payload can be defined as JSON in event.json for testing purposes.
 
 #### Upload Lambda to AWS
-```npm run upload-lambda```
-Executes tasks/upload-function.sh. Zips project into dist directory, then uploads zip file to AWS.
+```npm run upload-lambda```  
+Executes [upload-function.]. Script removes any existing zip file, compresses project into dist/main.zip, then uploads zip to AWS.  
 
 #### Invoke Lambda
-```npm run invoke-lambda```
+```npm run invoke-lambda```  
 Executes [invoke-function] Invokes the Lambda function with no payload and prints results to console.  
 
 #### Invoke Lambda with Payload
-```npm run invoke-lambda-payload```
+```npm run invoke-lambda-payload```  
 Execute [invoke-function-w-payload] Invokes the Lambda function with the payload defined in event.json.  
 
 #### Lambda Handler
@@ -31,5 +31,6 @@ Service DynamoService is a wrapper for DynamoDB's DocumentClient.
 
 [Project-Portfolio]:https://github.com/johnsonj561/Project-Portfolio
 [AWS-CLI]:https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+[upload-function]:./tasks/upload-function.sh
 [invoke-function]:./tasks/invoke-function.sh
 [invoke-function-w-payload]:./tasks/invoke-function-w-payload.sh
